@@ -6,53 +6,47 @@
     <title>Document</title>
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobile.css">
     <link rel="stylesheet" media="screen and (min-width: 992px)" href="laptop.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>nazmul islam juwel</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae repudiandae nisi enim. Cumque nisi est eum sunt optio delectus deserunt!</p>
-    <style>
-        /* *{
-            box-sizing: border-box;
+<div class="header">
+    <div class="container">
+        <div class="box-wrap">
+            <ul >
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">skill</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    @media  screen and (max-width: 700px) {
+        .box-wrap{
+            background-color: rgb(10, 7, 11);
         }
-        @media  screen and (min-width:400px) {
-            body {
-                background-color: aqua;
-               
-            }
-            h1{
-                color: chocolate;
-            }
-            p{
-                font-weight: bold;
-            }
-        }
-        @media screen and (min-width:900px) {
-            body {
-                background-color: blue;
-            }
-            h1{
-                color: red;
-            }
-            p{
-                font-weight: bold;
-            }
-        }
-    </style> */
+    .box-wrap ul{
+        flex-direction:column;
+        padding: 30px;
+        
+    }
+    .box-wrap ul a{
+        background-color: indigo;
+        margin: 10px 0;
+        color: bisque;
+        text-align: center;
+        border-radius: 12px;
+        background-color: chartreuse;
+    }
+}
+</style>
+
+
+
+
 </body>
 </html>
-
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
